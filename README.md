@@ -47,6 +47,7 @@ $ php artisan serve
 ```
 
 ## Account Info
+You can create new or using this default account
 ```bash
 usermail : wisnu@test.com
 password : password
