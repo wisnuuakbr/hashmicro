@@ -9,7 +9,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "composer install && npm install && npm run production",
+    "buildCommand": "php composer.phar install && npm install && npm run production",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
