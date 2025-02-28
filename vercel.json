@@ -9,7 +9,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "vite build",
+    "buildCommand": "composer install && npm install && npm run production",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
@@ -29,7 +29,6 @@
         "DB_HOST": "mwi5n.h.filess.io",
         "DB_PORT": "3307",
         "DB_DATABASE": "hashmicro_suddenland",
-        "DB_USERNAME": "hashmicro_suddenland",
-        "DB_PASSWORD": "54f1b2034b33f793318c3b4ea58f773fb73efa03"
+        "DB_USERNAME": "hashmicro_suddenland"
     }
 }
