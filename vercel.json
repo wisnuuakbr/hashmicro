@@ -2,14 +2,13 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.5.3" }
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run production",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
