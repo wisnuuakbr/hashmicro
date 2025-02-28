@@ -9,6 +9,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
+    "buildCommand": "npm run production",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
