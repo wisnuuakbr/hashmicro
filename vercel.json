@@ -9,7 +9,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "npm install && npm run production",
+    "buildCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run production",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
